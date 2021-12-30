@@ -9,5 +9,6 @@ curl -s https://install.zerotier.com | sudo bash
 sudo zerotier-cli join $1
 sudo zerotier-cli listnetworks
 sudo wget https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/client_led.service /lib/systemd/system/led.service
+sudo systemctl daemon-reload
 sudo systemctl enable led.service
 sudo reboot
