@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo rpi-update
+sudo rpi-update -y
 curl -sSL https://get.docker.com | sh
 sudo systemctl enable docker
 curl -s https://install.zerotier.com | sudo bash
