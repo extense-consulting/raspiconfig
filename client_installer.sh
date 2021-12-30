@@ -4,5 +4,5 @@ sudo rpi-update -y
 curl -sSL https://get.docker.com | sh
 sudo systemctl enable docker
 curl -s https://install.zerotier.com | sudo bash
-sudo zerotier-cli join af78bf94366d3f6c
+sudo zerotier-cli join $1
 sudo reboot
