@@ -1,5 +1,5 @@
 echo "Installing Client..."
-echo "ZeroTier Network ID: " + $1
+echo "ZeroTier Network ID: " $1
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo rpi-update -y
