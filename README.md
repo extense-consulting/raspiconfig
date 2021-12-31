@@ -6,10 +6,10 @@ Sets-up a Raspberry PI for ZeroTier One Network. You can choose from a Client or
 # Installation
 
 ## Client
-curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/client_installer.sh | bash -s <ZEROTIER ONE NETWORK ID>
+`curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/client_installer.sh | bash -s <ZEROTIER ONE NETWORK ID>`
 
 ## Server
-curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/server_installer.sh | bash
+`curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/server_installer.sh | bash`
 
 ### After installation
 When setting up the server, the MOON ID was communicated. This is required when connecting the clients with the following command:
