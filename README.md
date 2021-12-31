@@ -12,11 +12,5 @@ curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/
 curl -sSL https://raw.githubusercontent.com/extense-consulting/raspiconfig/main/server_installer.sh | bash
 
 ### After installation
-1. `cd /var/lib/zerotier-one`
-2. `sudo zerotier-idtool initmoon identity.public >> /home/pi/moon.json`
-3. `/var/lib/zerotier-one $ sudo zerotier-idtool genmoon /home/pi/moon.json`
-4. `sudo nano /home/pi/moon.json` **Note** Copy the ID of your moon 
-4. `sudo mkdir moons.d`
-5. `sudo mv <YOUR MOON ID>.moon moons.d/`
-6. `sudo rm /home/pi/moon.json`
-7. `sudo reboot`
+When setting up the server, the MOON ID was communicated. This is required when connecting the clients with the following command:
+`sudo zerotier-cli orbit <MOON ID> <MOON ID>` 
